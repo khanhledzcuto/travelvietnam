@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet Nam Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+BE+WAL:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div id="content" style="width: 100vw; height: 100vh;">
+        <div class="title">
+            <p class="animate__animated animate__tada animate__slower">DU LỊCH<br>VIỆT NAM</p>
+        </div>
+        <div class="subtitle animate__animated animate__slideInUp animate__delay-2s">
+            <p>
+                Hành trình khám phá vẻ đẹp bất tận
+            </p>
+        </div>
+        <div class="content-paragraph animate__animated animate__fadeIn animate__delay-2s">
+            <p>
+                Dự án du lịch vòng quanh Việt Nam được tạo bởi các thành viên đẳng cấp giúp mọi người có thể khám phá vẻ đẹp của những kì quan Việt Nam trực tuyến mà không cần phải đi đâu xa...
+            </p>
+        </div>
+        <div class="btn-explore" onclick="scrollToHome(); changeOpacity();">
+            <button class="animate__animated animate__bounce animate__infinite animate__slower" type="button">Khám phá ngay <i class="fa-solid fa-magnifying-glass" style="transform: translate(1px,2px);"></i></button>
+        </div>
+        <div class="btn-signup">
+            <button class="animate__animated animate__jello animate__infinite animate__slower" type="button">Liên hệ <i class="fa-solid fa-arrow-right fa-1x" style="transform: translate(1px, 1 px);"></i></button>
+        </div>
+        <div class="background-color"></div>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#content">Trang chủ</a></li>
+            <li><a href="#Home">Khám Phá</a></li>
+            <li><a href="#Contact">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div id="Home">
+        <div class="section">
+            <div class="title">Miền Bắc</div>
+            <div class="img1">
+                <img src="assets/dltc/vhl1.jpg" alt="" class="imgCover">
+                <img src="assets/dltc/vhl1.jpg" alt="" class="imgMain" id="image1">
+                <p id="textimage1" class="text">Vịnh Hạ Long</p>
+                <div id="overlay1" class="overlay">
+                    <div class="overlay-content">
+                        <span class="close-button" data-target="overlay1">&times;</span>
+                        <div class="overlay-title">
+                            <h1>Vịnh Hạ Long</h1>
+                        </div>
+                        <div class="overlay-body">
+                            <div class="overlay-image">
+                                <img src="assets/dltc/vhl1.jpg" alt="Hình ảnh Vịnh Hạ Long - 1">
+                                <img src="assets/dltc/vhl2.webp" alt="Hình ảnh Vịnh Hạ Long - 2">
+                                <img src="assets/dltc/vhl0.jpg" alt="Hình ảnh Vịnh Hạ Long - 3">
+                            </div>
+                            <div class="overlay-text">
+                                <p class="overlay-p">Vịnh Hạ Long nằm ở tỉnh Quảng Ninh, là di sản thiên nhiên thế giới được UNESCO công nhận. Nơi đây nổi tiếng với hàng nghìn hòn đảo lớn nhỏ, tạo thành một bức tranh thiên nhiên hùng vĩ và thơ mộng. Vịnh Hạ Long còn có nhiều hang động đẹp như Động Thiên Cung, Hang Đầu Gỗ, và các làng chài truyền thống, mang đến trải nghiệm văn hóa độc đáo.</p>
+                                <ul>
+                                    <li>Thể loại: Kì quan thiên nhiên</li>
+                                    <li>Địa điểm: Quảng Ninh - Việt Nam</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="assets/dltc/tamdao0.jpg" alt="" class="imgCover">
+                <img src="assets/dltc/tamdao0.jpg" alt="" class="imgMain" id="image2">
+                <p id="textimage2" class="text">Tam Đảo</p>
+                <div id="overlay2" class="overlay">
+                    <div class="overlay-content">
+                        <span class="close-button" data-target="overlay2">&times;</span>
+                        <div class="overlay-title">
+                            <h1>Tam Đảo</h1>
+                        </div>
+                        <div class="overlay-body">
+                            <div class="overlay-image">
+                                <img src="assets/dltc/tamdao1.jpg" alt="Hình ảnh Tam Đảo - 1">
+                                <img src="assets/dltc/tamdao0.jpg" alt="Hình ảnh Tam Đảo - 2">
+                                <img src="assets/dltc/tamdao2.jpg" alt="Hình ảnh Tam Đảo - 3">
+                            </div>
+                            <div class="overlay-text">
+                                <p class="overlay-p">Tam Đảo thuộc tỉnh Vĩnh Phúc, là khu nghỉ dưỡng lý tưởng nhờ khí hậu mát mẻ quanh năm. Nơi đây có cảnh quan thiên nhiên núi non trùng điệp, cùng các điểm tham quan nổi bật như Tháp truyền hình, Đền Bà Chúa Thượng Ngàn, Thác Bạc. Tam Đảo còn hấp dẫn với các món ăn đặc sản như su su, gà đồi.</p>
+                                <ul>
+                                    <li>Thể loại: Khu nghỉ dưỡng</li>
+                                    <li>Địa điểm: Vĩnh Phúc - Việt Nam</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img3">
+                <img src="assets/dltc/trangan0.jpg" alt="" class="imgCover">
+                <img src="assets/dltc/trangan0.jpg" alt="" class="imgMain" id="image3">
+                <p class="text" id="textimage3">Tràng An</p>
+                <div id="overlay3" class="overlay">
+                    <div class="overlay-content">
+                        <span class="close-button" data-target="overlay3">&times;</span>
+                        <div class="overlay-title">
+                            <h1>Tràng An</h1>
+                        </div>
+                        <div class="overlay-body">
+                            <div class="overlay-image">
+                                <img src="assets/dltc/trangan0.jpg" alt="">
+                                <img src="assets/dltc/trangan1.jpg" alt="">
+                                <img src="assets/dltc/trangan2.jfif" alt="">
+                            </div>
+                            <div class="overlay-text">
+                                <p class="overlay-p">Quần thể danh thắng Tràng An ở Ninh Bình được UNESCO công nhận là di sản thế giới kép (văn hóa và thiên nhiên). Nơi đây có hệ thống hang động kỳ bí, sông nước trong xanh, và các di tích lịch sử như Đền Trình, Đền Trần, Phủ Khống. Tràng An là sự kết hợp hài hòa giữa thiên nhiên và văn hóa, là điểm đến hấp dẫn cho du khách trong nước và quốc tế.</p>
+                                <ul>
+                                    <li>Thể loại: Quần thể danh thắng</li>
+                                    <li>Địa điểm: Ninh Bình - Việt Nam</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img4">
+                <img src="assets/dltc/sapa0.png" alt="" class="imgCover">
+                <img src="assets/dltc/sapa0.png" alt="" class="imgMain" id="image4">
+                <p class="text" id="textimage4">Sapa</p>
+                <div id="overlay4" class="overlay">
+                    <div class="overlay-content">
+                        <span class="close-button" data-target="overlay4">&times;</span>
+                        <div class="overlay-title">
+                            <h1>Sa pa</h1>
+                        </div>
+                        <div class="overlay-body">
+                            <div class="overlay-image">
+                                <img src="assets/dltc/sapa0.png" alt="">
+                                <img src="assets/dltc/sapa4.jfif" alt="">
+                                <img src="assets/dltc/Sapa3.jpg" alt="">
+                            </div>
+                            <div class="overlay-text">
+                                <p class="overlay-p">Sapa là thị trấn thuộc tỉnh Lào Cai, nằm ở độ cao khoảng 1.500 - 1.650m so với mực nước biển. Sapa nổi tiếng với cảnh quan núi non trùng điệp, ruộng bậc thang đẹp như tranh vẽ, và đỉnh Fansipan – nóc nhà Đông Dương. Nơi đây còn là nơi sinh sống của nhiều dân tộc thiểu số, mang đến nét văn hóa đa dạng và phong phú.</p>
+                                <ul>
+                                    <li>Thể loại: Thị trấn</li>
+                                    <li>Địa điểm: Lào Cai - Việt Nam</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img5">
+                <img src="assets/dltc/chuayentu0.webp" alt="" class="imgCover">
+                <img src="assets/dltc/chuayentu0.webp" alt="" class="imgMain" id="image5">
+                <p class="text" id="textimage5">Chùa Yên Tử - Quảng Ninh</p>
+                <div id="overlay5" class="overlay">
+                    <div class="overlay-content">
+                        <span class="close-button" data-target="overlay5">&times;</span>
+                        <div class="overlay-title">
+                            <h1>Chùa Yên Tử</h1>
+                        </div>
+                        <div class="overlay-body">
+                            <div class="overlay-image">
+                                <img src="assets/dltc/yentu1.webp" alt="">
+                                <img src="assets/dltc/yentu2.webp" alt="">
+                                <img src="assets/dltc/yentu3.jpg" alt="">
+                            </div>
+                            <div class="overlay-text">
+                                <p class="overlay-p">Chùa Yên Tử thuộc tỉnh Quảng Ninh, được coi là "đất tổ Phật giáo Việt Nam". Đây là nơi vua Trần Nhân Tông tu hành và sáng lập thiền phái Trúc Lâm. Khu danh thắng Yên Tử không chỉ có giá trị tâm linh sâu sắc mà còn sở hữu cảnh quan thiên nhiên hùng vĩ, với con đường hành hương qua rừng núi và hệ thống chùa tháp cổ kính.</p>
+                                <ul>
+                                    <li>Thể loại: Chùa</li>
+                                    <li>Địa điểm: Quảng Ninh - Việt Nam</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img6">
+                <img src="assets/dltc/mocchau0.jpg" alt="" class="imgCover">
+                <img src="assets/dltc/mocchau0.jpg" alt="" class="imgMain" id="image6">
+                <p class="text" id="textimage6">Cao nguyên Mộc Châu</p>
+                <div id="overlay6" class="overlay">
+                    <div class="overlay-content">
+                        <span class="close-button" data-target="overlay6">&times;</span>
+                        <div class="overlay-title">
+                            <h1>mộc châu</h1>
+                        </div>
+                        <div class="overlay-body">
+                            <div class="overlay-image">
+                                <img src="assets/dltc/mocchau3.webp" alt="">
+                                <img src="assets/dltc/mocchau1.webp" alt="">
+                                <img src="assets/dltc/mocchau2.webp" alt="">
+                            </div>
+                            <div class="overlay-text">
+                                <p class="overlay-p">Cao nguyên Mộc Châu thuộc tỉnh Sơn La, nổi tiếng với khí hậu trong lành, mát mẻ và vẻ đẹp thiên nhiên hoang sơ. Nơi đây có đồi chè xanh bạt ngàn, rừng thông bản Áng, thác Dải Yếm, và mùa hoa cải, hoa mận, hoa đào rực rỡ. Mộc Châu còn là nơi hội tụ nét văn hóa đặc sắc của các dân tộc thiểu số như Thái, Mông.</p>
+                                <ul>
+                                    <li>Thể loại: Cao Nguyên</li>
+                                    <li>Địa điểm: Sơn La - Việt Nam</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title">Miền Trung</div>
+        </div>
+        <div class="section">
+            <div class="title">Miền Nam</div>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
